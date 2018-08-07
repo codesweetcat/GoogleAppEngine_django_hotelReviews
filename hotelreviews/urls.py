@@ -17,11 +17,11 @@ Including another URLconf
 
 from django.conf.urls import include,url
 from django.contrib import admin
-
+from hotelsite.views import home
 
 urlpatterns = [
     
-     url(r'^$', include('hotelsite.urls')),
+     url(r'^$', home),
      url(r'^', include('hotelsite.urls')),
     
 
